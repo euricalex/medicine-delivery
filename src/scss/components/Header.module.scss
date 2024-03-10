@@ -1,0 +1,54 @@
+.header {
+    background-color: #4682b4;
+    position: sticky;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      top: 0;
+      z-index: 1000; /* Добавьте z-index, если это необходимо */
+      padding: 10px;
+    
+      .nav_header {
+        margin: 0;
+        padding: 0;
+        .nav_list {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+        }
+    
+    .logo_shop {
+    
+    }
+        .shop_cart {
+          margin-right: 25px;
+          justify-content: right;
+          color: #fff;
+          font-size: 30px;
+        }
+    
+        a {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: color 0.3s ease;
+            
+            &:hover {
+                color: 	#E0FFFF;
+              }
+        }
+    
+      }
+      
+  }
+  
+  
+ 
+ 
+   
+
+  
+  
+
+  
+  

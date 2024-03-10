@@ -1,0 +1,107 @@
+.main-container {
+  margin-left: 25px;
+  display: flex;
+}
+
+.sidebar {
+  margin-top: 25px;
+
+  width: 300px;
+  height: 500px;
+  border-radius: 20px;
+  outline: 2px solid #4682b4; /* добавляем контур */
+  padding: 20px; /* добавляем отступы вокруг контента */
+}
+.sidebar-header {
+  text-align: center;
+}
+
+.content {
+  flex: 1; /* Основная часть занимает всё оставшееся пространство */
+
+  /* Дополнительные стили основной части */
+}
+
+.shops-list {
+  padding: 0;
+}
+
+.shop-item {
+  background-color: #4682b4;
+
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  padding: 15px 30px;
+  display: block;
+  text-align: center;
+  transition: background-color 0.3s ease;
+&:hover {
+ background-color:#355ebd ; 
+
+}
+}
+
+.main-content {
+overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+height: 100vh;
+  width: calc(100% - 350px); /* Ширина основного контента, вычитаем ширину sidebar */
+  &::-webkit-scrollbar { /* Стилизуем полосу прокрутки для браузеров WebKit (Chrome, Safari) */
+    width: 10px;
+    background-color: transparent; /* Прозрачный фон */
+  }
+
+  &::-webkit-scrollbar-thumb { 
+    background-color: #4682b4; 
+    border-radius: 5px; 
+  }
+
+  .medicine-list {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    li {
+      position: relative;
+      width: 300px;
+      height: 300px;
+
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+      h2 {
+        margin-top: 0;
+      }
+.order-block {
+  display: flex;
+  justify-content: right;
+  .btn-order {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    padding: 12px 25px; /* Увеличиваем отступы кнопки */
+    font-size: 20px; /* Увеличиваем размер шрифта */
+    background-color: #4682b4; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета фона при наведении */
+  }
+
+  .btn-order:hover {
+    background-color:  #355ebd;/* Изменение цвета фона при наведении */
+  }
+}
+  
+    }
+  }
+}
