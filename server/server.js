@@ -23,18 +23,18 @@ MongoClient.connect(URL)
     console.error('Error connecting to MongoDB:', err);
   });
 
-// Маршрут для получения данных
+
 app.get('/medicinies', (req, res) => {
   const pharmacy = req.query.pharmacy;
   const sortOrder = req.query.sortOrder || 'asc';
-  // Проверка наличия подключения к базе данных
+
   if (!db) {
     return res.status(500).json({ error: 'Database connection error' });
   }
 
   const sortDirection = sortOrder === 'asc' ? 1 : -1;
 
-  // Запрос к коллекции для получения данных
+
   db.collection(COLLECTION_NAME)
     .find({pharmacy})
     .sort({price: sortDirection})
@@ -48,7 +48,6 @@ app.get('/medicinies', (req, res) => {
     });
 });
 
-// Слушаем порт 3000
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
