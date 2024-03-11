@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/medicine-delivery/static/css/main.acae570e.css",
-    "main.js": "/medicine-delivery/static/js/main.0e4b492e.js",
+    "main.js": "/medicine-delivery/static/js/main.e684d119.js",
     "index.html": "/medicine-delivery/index.html",
     "main.acae570e.css.map": "/medicine-delivery/static/css/main.acae570e.css.map",
-    "main.0e4b492e.js.map": "/medicine-delivery/static/js/main.0e4b492e.js.map"
+    "main.e684d119.js.map": "/medicine-delivery/static/js/main.e684d119.js.map"
   },
   "entrypoints": [
     "static/css/main.acae570e.css",
-    "static/js/main.0e4b492e.js"
+    "static/js/main.e684d119.js"
   ]
 }
