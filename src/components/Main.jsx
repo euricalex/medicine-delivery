@@ -13,7 +13,7 @@ function Main() {
     }, [selectedPharmacy]); // Запускаем useEffect при изменении selectedPharmacy
 
     const fetchData = (pharmacy) => {
-        axios.get(`https://mongodb-api-two.vercel.app/medicinies`, { params: { pharmacy,  sortOrder: 'asc'  } })
+        axios.get(`http://localhost:3000/medicinies`, { params: { pharmacy,  sortOrder: 'asc'  } })
             .then((res) => {
                 setMedicines(res.data);
             }).catch((err) => {
