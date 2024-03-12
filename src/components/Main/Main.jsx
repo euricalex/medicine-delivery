@@ -15,8 +15,8 @@ function Main() {
   );
 
   React.useEffect(() => {
-    fetchData(selectedPharmacy); // Выполняем запрос с текущей аптекой
-  }, [selectedPharmacy]); // Запускаем useEffect при изменении selectedPharmacy
+    fetchData(selectedPharmacy);
+  }, [selectedPharmacy]);
 
   const fetchData = (pharmacy) => {
     axios
@@ -32,8 +32,8 @@ function Main() {
   };
 
   const handleSelectPharmacy = (pharmacy) => {
-    setSelectedPharmacy(pharmacy); // Обновляем выбранную аптеку
-    localStorage.setItem("selectedPharmacy", pharmacy); // Сохраняем в локальное хранилище
+    setSelectedPharmacy(pharmacy);
+    localStorage.setItem("selectedPharmacy", pharmacy);
   };
   const handleOrderNow = (item) => {
     addToCart(item);
@@ -41,14 +41,13 @@ function Main() {
   };
 
   return (
-    <div className="main-container">
+    <section className="main-container">
       <div className="sidebar">
         <h1 className="sidebar-header">Shops</h1>
         <PharmacySelector
           onSelectPharmacy={handleSelectPharmacy}
           selectedPharmacy={selectedPharmacy}
-        />{" "}
-        {/* Передаем функцию обратного вызова */}
+        />
       </div>
 
       <div className="main-content">
@@ -86,7 +85,7 @@ function Main() {
         pauseOnHover
         theme="light"
       />
-    </div>
+    </section>
   );
 }
 

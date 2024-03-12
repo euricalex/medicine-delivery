@@ -9,18 +9,14 @@
   width: 300px;
   height: 500px;
   border-radius: 20px;
-  outline: 2px solid #4682b4; /* добавляем контур */
-  padding: 20px; /* добавляем отступы вокруг контента */
+  outline: 2px solid #4682b4; 
+  padding: 20px; 
 }
 .sidebar-header {
   text-align: center;
 }
 
-.content {
-  flex: 1; /* Основная часть занимает всё оставшееся пространство */
 
-  /* Дополнительные стили основной части */
-}
 
 .shops-list {
   padding: 0;
@@ -77,7 +73,15 @@ height: 100vh;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
       h2 {
-        margin-top: 0;
+     margin-top: 0;
+        font-size: 24px;
+        color: #333; 
+      }
+      
+      p {
+      
+        color: #666; 
+        font-size: 16px;
       }
 .order-block {
   display: flex;

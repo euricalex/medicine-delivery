@@ -32,17 +32,14 @@ function Cart() {
       await axios.post('http://localhost:3000/orders', orderData);
       resetForm();
       toast.success('Order placed successfully');
-      clearCart(); // Очистить корзину
-      setTotalPrice(0); // Сбросить общую сумму
+      clearCart(); 
+      setTotalPrice(0); 
     } catch (error) {
       console.error('Error placing order:', error);
       toast.error('Failed to place order');
     }
   };
   
-  
-  
-
   const handleRemoveFromCart = (item) => {
     removeFromCart(item);
     toast.info("Product was removed from the cart");
@@ -177,7 +174,6 @@ function Cart() {
           </ul>
         </div>
       </div>
-
       <ToastContainer
         position="top-right"
         autoClose={800}

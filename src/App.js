@@ -39,8 +39,3 @@ const clearCart = () => {
 export default App;
 
 
-
-// const clearCart = () => {
-//   setCartItems([]);
-// };
-

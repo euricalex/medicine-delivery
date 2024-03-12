@@ -1,4 +1,3 @@
-// PharmacySelector.js
 import React from 'react';
 
 function PharmacySelector({ onSelectPharmacy, selectedPharmacy }) {
