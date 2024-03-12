@@ -49,10 +49,10 @@ overflow: auto;
   flex-wrap: wrap;
   justify-content: center;
 height: 100vh;
-  width: calc(100% - 350px); /* Ширина основного контента, вычитаем ширину sidebar */
-  &::-webkit-scrollbar { /* Стилизуем полосу прокрутки для браузеров WebKit (Chrome, Safari) */
+  width: calc(100% - 350px); 
+  &::-webkit-scrollbar { 
     width: 10px;
-    background-color: transparent; /* Прозрачный фон */
+    background-color: transparent; 
   }
 
   &::-webkit-scrollbar-thumb { 
@@ -68,7 +68,7 @@ height: 100vh;
 
     li {
       position: relative;
-      width: 300px;
+      width: 285px;
       height: 300px;
 
       background-color: #f0f0f0;
@@ -86,19 +86,19 @@ height: 100vh;
     position: absolute;
     right: 10px;
     bottom: 20px;
-    padding: 12px 25px; /* Увеличиваем отступы кнопки */
-    font-size: 20px; /* Увеличиваем размер шрифта */
-    background-color: #4682b4; /* Цвет фона кнопки */
-    color: white; /* Цвет текста кнопки */
+    padding: 12px 25px; 
+    font-size: 20px; 
+    background-color: #4682b4; 
+    color: white; 
     border: none;
     margin-top: 20px;
     border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Плавное изменение цвета фона при наведении */
+    transition: background-color 0.3s ease; 
   }
 
   .btn-order:hover {
-    background-color:  #355ebd;/* Изменение цвета фона при наведении */
+    background-color:  #355ebd;
   }
 }
   

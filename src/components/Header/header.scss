@@ -3,7 +3,7 @@
     position: sticky;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       top: 0;
-      z-index: 1000; /* Добавьте z-index, если это необходимо */
+      z-index: 1000; 
       padding: 10px;
     
       .nav_header {
@@ -15,9 +15,7 @@
     align-items: center;
         }
     
-    .logo_shop {
-    
-    }
+   
         .shop_cart {
           margin-right: 25px;
           justify-content: right;
