@@ -14,9 +14,8 @@ function App() {
     setCartItems([...cartItems, item]);
   };
 
-  const removeFromCart = (index) => {
-    const newCartItems = [...cartItems];
-    newCartItems.splice(index, 1);
+  const removeFromCart = (item) => {
+    const newCartItems = cartItems.filter(cartItem => cartItem !== item);
     setCartItems(newCartItems);
   };
 const clearCart = () => {
